@@ -1,0 +1,56 @@
+.btn {
+    display: block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    
+    border: none;
+
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+
+&:hover,
+&:focus {
+    background-color: var(--acctent-color);
+    color: var(--primary-br-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.portfolio-main__btn--first {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 73px;
+    color: var(--primary-br-color);
+    background-color: var(--acctent-color);
+
+    transition: background-color 250ms var(--cubic);
+
+&--first:hover,
+&--first:focus,
+&--first:active {
+    background-color: var(--acctent-color);
+}
+}
+.portfolio-main__btn--second {
+    min-width: 128px;
+}
+
+.portfolio-main__btn--third {
+    min-width: 145px;
+}
+
+.portfolio-main__btn--fourth {
+    min-width: 103px;
+
+}
+
+.portfolio-main__btn--fifth {
+    min-width: 130px;
+}

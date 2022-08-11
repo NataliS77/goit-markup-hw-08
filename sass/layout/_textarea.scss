@@ -1,0 +1,56 @@
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+    color: #75757580;
+}
+
+.form__spich {
+    display: flex;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--main-text-color);
+
+    text-underline-position: under;
+    user-select: none;
+}
+
+.form__link {
+    color: var(--acctent-color);
+
+}
+
+.check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.check__icon{
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+
+}
+
+.check__icon--uncheck {
+    opacity: 0;
+    fill: var(--primary-br-color);
+    transition: opacity var(--cubic);
+
+}
+
+.check__input:checked +  .check__icon .check__icon--check {
+    opacity: 0;
+    transition: opacity var(--cubic);
+
+}
+
+.check__input:checked + .check__icon .check__icon--uncheck {
+    opacity: 1;
+}

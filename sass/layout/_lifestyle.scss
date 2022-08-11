@@ -1,0 +1,47 @@
+.lifestyle {
+    padding-top: 94px;
+
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+&__link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--back-color);
+
+}
+&__item {
+    width: 270px;
+}
+
+&__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+&__text {
+    margin-top: 0;
+    color: var(--main-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+}

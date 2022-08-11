@@ -1,0 +1,54 @@
+.main {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-bg-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    text-align: center;
+}
+
+.main__title {
+    width: 696px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: var(--title-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.main-btn {
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    color: var(--title-text-color);
+    min-width: 200px;
+
+    background-color: var(--acctent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    transition: background-color 250ms var(--cubic);
+
+
+&:hover,
+&:focus {
+    background-color: var(--acctent-bg-color);
+}
+}

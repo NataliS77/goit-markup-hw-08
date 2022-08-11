@@ -1,0 +1,39 @@
+.auth__list {
+    display: flex;
+    margin-left: auto;
+
+& .item+.item {
+    margin-left: 50px;
+}
+}
+
+
+.auth__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+    text-decoration: none;
+    color: var(--acctent-color);
+   }
+
+    &--actual {
+    color: var(--acctent-color);
+   }
+}
+
+.auth__icon {
+    fill: currentColor;
+}
