@@ -65,11 +65,26 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section.no-padding {
@@ -832,14 +847,24 @@ ul {
 .lifestyle {
   padding-top: 94px;
 }
-.lifestyle__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (max-width: 1199px) {
+  .lifestyle {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-.lifestyle__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .lifestyle__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lifestyle__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 .lifestyle__link {
   display: flex;
@@ -852,8 +877,30 @@ ul {
   border-radius: 4px;
   background-color: var(--back-color);
 }
-.lifestyle__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .lifestyle__link {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lifestyle__link {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lifestyle__link {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .lifestyle__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .lifestyle__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .lifestyle__title {
   margin-top: 0;
@@ -864,12 +911,32 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .lifestyle__title {
+    text-align: center;
+  }
+}
 .lifestyle__text {
   margin-top: 0;
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+}
+@media screen and (min-width: 480px) {
+  .lifestyle__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lifestyle__text {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lifestyle__text {
+    width: 270px;
+  }
 }
 
 .form {
