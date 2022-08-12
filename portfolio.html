@@ -27,7 +27,13 @@
           <a class="logo" href="">
             <span lang="" class="logo__text logo__text--accent">Web</span>Studio</a>
         </div>
-        <ul class="list nav__list">
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="lifestyle__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        
+        </button>
+<!--       <ul class="list nav__list">
           <li class="nav__item item">
             <a class="nav__link link" href="./index.html">Студія</a>
           </li>
@@ -39,9 +45,9 @@
           </li>
         </ul>
       </nav>
-
+--> 
       <!--contakt-->
-      <ul class="auth__list list">
+<!--      <ul class="auth__list list">
         <li class="auth__item item">
 <a class="auth__link link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer"
   aria-label="envelope">
@@ -56,7 +62,7 @@
     </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-    </div>
+    </div>-->
   </header>
   <!--main-->
   <main>
@@ -301,5 +307,43 @@
   </div>
 </footer>
 </body>
+<!--modal menu-->
+<div class="menu-overlay is-open" data-menu>
+  <button class="close-btn" data-modal-close>
+      <svg class="close-btn__icon" width="40" height="40">
+        <use class="" href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+  <div class="menu-container">
+    <ul class="menu-overlay__list list">
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link  link" href="./index.html">Студія</a>
+      </li>
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link link" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link link" href="">Контакти</a>
+      </li>
+    </ul>
+    <ul class="menu-overlay__list-contact list">
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link menu-overlay__link--actual link" href="tle:+380961111111" target="_blank"
+          rel="noopener noreferrer" aria-label="tel">+38 096 111 11 11</a>
+      </li>
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link  link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer"
+          aria-label="envelope">info@devstudio.com</a>
+      </li>
+    </ul>
 
+    <ul class="menu-overlay__list-social list">
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Instagram</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Twitter</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Facebook</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+<script src="./js/menu.js"></script>
 </html>

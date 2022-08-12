@@ -26,13 +26,14 @@
         <div class="nav-logo nav__nav-logo">
           <a class="logo" href="">
             <span class="logo__text logo__text--accent">Web</span>Studio</a>
-      
-        <button class="menu-btn" type="button">
+       </div>
+        <button class="menu-btn" type="button" data-menu-open>
             <svg class="lifestyle__icon" width="40" height="40">
               <use href="./images/icons.svg#menu"></use>
             </svg>
 
         </button>
+       
       <!--<ul class="nav__list list">
           <li class="nav__item item">
             <a class="nav__link nav__link--current nav__link--ferst link " href="./index.html">Студія</a>
@@ -542,11 +543,16 @@
   </div>
 </div>
 <!--modal menu-->
-<div class="menu-overlay">
+<div class="menu-overlay is-open" data-menu>
   <div class="menu-container">
+    <button class="close-btn" data-modal-close>
+      <svg class="close-btn__icon" width="40" height="40">
+        <use class="" href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
   <ul class="menu-overlay__list list">
     <li class="menu-overlay__item item">
-      <a class="menu-overlay__link menu-overlay__link--current menu-overlay__link--ferst link " href="./index.html">Студія</a>
+      <a class="menu-overlay__link menu-overlay__link--current link " href="./index.html">Студія</a>
     </li>
     <li class="menu-overlay__item item">
       <a class="menu-overlay__link link" href="./portfolio.html">Портфоліо</a>
@@ -555,25 +561,27 @@
       <a class="menu-overlay__link link" href="">Контакти</a>
     </li>
   </ul>
-    <ul class="menu-overlay_list list">
-      <li class="menu-overlay_item item">
-        <a class="menu-overlay_link menu-overlay_link--actual link" href="mailto:info@devstudio.com" target="_blank"
-          rel="noopener noreferrer" aria-label="envelope">info@devstudio.com</a>
+    <ul class="menu-overlay__list-contact list">
+      <li class="menu-overlay__item item">
+        <a class="menu-overlay__link menu-overlay__link--actual link" href="tle:+380961111111" target="_blank" rel="noopener noreferrer"
+          aria-label="tel">+38 096 111 11 11</a>
       </li>
-      <li class="menu-overlay_item item">
-        <a class="menu-overlay_link link" href="tle:+380961111111" target="_blank" rel="noopener noreferrer" aria-label="tel">+38 096 111 11 11</a>
+      <li class="menu-overlay__item item">
+       <a class="menu-overlay__link  link" href="mailto:info@devstudio.com" target="_blank"
+          rel="noopener noreferrer" aria-label="envelope">info@devstudio.com</a>
       </li>
     </ul>
     
-    <ul class="menu-overlay__list list">
-      <li class="menu-overlay_item item">Instagram</li>
-      <li class="menu-overlay_item item">Twitter</li>
-      <li class="menu-overlay_item item">Facebook</li>
-      <li class="menu-overlay_item item">LinkedIn</li>
+    <ul class="menu-overlay__list-social list">
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Instagram</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Twitter</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">Facebook</a></li>
+      <li class="menu-overlay__item-social item"><a href="" class="menu-overlay__link-social link">LinkedIn</a></li>
     </ul>
   </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>-->
 
 </html>
