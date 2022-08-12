@@ -32,20 +32,17 @@
     background: var(--title-text-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    opacity: 0,5;
-    pointer-events: none;
-    visibility: hidden;
     
-    transition: opacity 250ms var(--cubic);
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 
 @media screen and (min-width: 768px) {
         display: none;
 
-&.is-open {
-    opacity: 0,5;
-    pointer-events: initial;
-    visibility: visible;
-}   
+//&.is-open {
+    //opacity: 0;
+   // pointer-events: initial;
+   // visibility: visible;
+//}   
 }
 }
 
@@ -73,7 +70,7 @@
     }
 }
 .menu-container{
-    display: flex;
+    display: block;
     flex-direction: column;
 
     margin-left: auto;
