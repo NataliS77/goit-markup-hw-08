@@ -20,15 +20,21 @@
 
 <body>
   <!--шапка сайта-->
-  <!--<header class="section header">
+  <header class="section header">
     <div class="container header">
       <nav class="nav">
         <div class="nav-logo nav__nav-logo">
           <a class="logo" href="">
             <span class="logo__text logo__text--accent">Web</span>Studio</a>
-        </div>
-        <ul class="nav__list list">
-          <li class="item nav__item item">
+      
+        <button class="menu-btn" type="button">
+            <svg class="lifestyle__icon" width="40" height="40">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+
+        </button>
+      <!--<ul class="nav__list list">
+          <li class="nav__item item">
             <a class="nav__link nav__link--current nav__link--ferst link " href="./index.html">Студія</a>
           </li>
           <li class="nav__item item">
@@ -37,8 +43,8 @@
           <li class="nav__item item">
             <a class="nav__link link" href="">Контакти</a>
           </li>
-        </ul>
-      </nav>-->
+        </ul>--> 
+      </nav>
       <!--contakt-->
       <!-- <ul class="auth auth__list list">
         <li class="auth__item item">
@@ -51,9 +57,9 @@
             <use class="auth__icon" href="./images/icons.svg#tel"></use>
           </svg>+38 096 111 11 11</a>
         </li>
-      </ul>
+      </ul>-->
     </div>
-  </header>-->
+  </header>
   <!--main section-->
   <!-- <main>
     <section class="section main">
@@ -120,19 +126,19 @@
         <div class="about__scene">
         <ul class="about__list list">
           <li class="about__item item">
-            <img src="./images/comp.jpg" alt="компьютер" width="370" />
+            <img src="./images/about/comp.jpg" alt="компьютер" width="370" />
             <div class="about__container">
             <p class="about__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="about__item item">
-          <img src="./images/f_3.jpg" alt="телефон" width="370" />
+          <img src="./images/about/f_3.jpg" alt="телефон" width="370" />
             <div class="about__container">
             <p class="about__text">Мобільні додатки</p>
             </div>
           </li>
           <li class="about__item item">
-            <img src="./images/color.jpg" alt="цвет" width="370" />
+            <img src="./images/about/color.jpg" alt="цвет" width="370" />
             <div class="about__container">
             <p class="about__text">Дизайнерські рішення</p>
             </div>
@@ -142,12 +148,12 @@
       </div>
     </section>-->
     <!--our team-->
-  <!--  <section class="section team">
+ <!--  <section class="section team">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item item">
-            <img class="team__img" src="./images/img.jpg" alt="сотрудник" width="270" />
+            <img class="team__img" src="./images/team/img.jpg" alt="сотрудник" width="270" />
             <div class="team__card">
               <p class="team__name">Игорь Демьяненко</p>
               <p class="team__speciality">Product Designer</p>
@@ -189,7 +195,7 @@
       </div>
           </li>
       <li class="item team__item">
-        <img class="team__img" src="./images/img_1.jpg" alt="сотрудник" width="270" />
+        <img class="team__img" src="./images/team/img_1.jpg" alt="сотрудник" width="270" />
         <div class="team__card">
           <p class="team__name">Ольга Репина</p>
           <p class="team__speciality">Frontend Developer</p>
@@ -238,7 +244,7 @@
         </div>
       </li>
       <li class="item team__item">
-        <img class="img" src="./images/img_3.jpg" alt="сотрудник" width="270" />
+        <img class="img" src="./images/team/img_3.jpg" alt="сотрудник" width="270" />
         <div class="team__card">
           <p class="team__name">Николай Тарасов</p>
           <p class="team__speciality">Marketing</p>
@@ -288,7 +294,7 @@
         </div>
       </li>
       <li class="item team__item">
-        <img class="team__img" src="./images/img_4.jpg" alt="сотрудник" width="270" />
+        <img class="team__img" src="./images/team/img_4.jpg" alt="сотрудник" width="270" />
         <div class="team__card">
           <p class="team__name">Михаил Ермаков</p>
           <p class="team__speciality">UI Designer</p>
@@ -479,7 +485,7 @@
     </footer>-->
 
     <!--modal window-->
-<!--<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal-btn" data-modal-close>
       <svg class="modal-btn__icon" width="20" height="20">
@@ -533,6 +539,38 @@
       </label>
     <button class="form-btn" type="submit">Відправити</button>
     </form>
+  </div>
+</div>
+<!--modal menu-->
+<div class="menu-overlay">
+  <div class="menu-container">
+  <ul class="menu-overlay__list list">
+    <li class="menu-overlay__item item">
+      <a class="menu-overlay__link menu-overlay__link--current menu-overlay__link--ferst link " href="./index.html">Студія</a>
+    </li>
+    <li class="menu-overlay__item item">
+      <a class="menu-overlay__link link" href="./portfolio.html">Портфоліо</a>
+    </li>
+    <li class="menu-overlay__item item">
+      <a class="menu-overlay__link link" href="">Контакти</a>
+    </li>
+  </ul>
+    <ul class="menu-overlay_list list">
+      <li class="menu-overlay_item item">
+        <a class="menu-overlay_link menu-overlay_link--actual link" href="mailto:info@devstudio.com" target="_blank"
+          rel="noopener noreferrer" aria-label="envelope">info@devstudio.com</a>
+      </li>
+      <li class="menu-overlay_item item">
+        <a class="menu-overlay_link link" href="tle:+380961111111" target="_blank" rel="noopener noreferrer" aria-label="tel">+38 096 111 11 11</a>
+      </li>
+    </ul>
+    
+    <ul class="menu-overlay__list list">
+      <li class="menu-overlay_item item">Instagram</li>
+      <li class="menu-overlay_item item">Twitter</li>
+      <li class="menu-overlay_item item">Facebook</li>
+      <li class="menu-overlay_item item">LinkedIn</li>
+    </ul>
   </div>
 </div>
 <script src="./js/modal.js"></script>
