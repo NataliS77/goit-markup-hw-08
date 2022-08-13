@@ -6,11 +6,19 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--main-bg-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
 
     text-align: center;
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
+
+   @media screen and (min-width: 768px){
+background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@1x.jpg);
+}
+ @media screen and (min-width: 1200px) {
+     background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head3_lg@1x.jpg);
+ }
 }
 
 .main__title {
