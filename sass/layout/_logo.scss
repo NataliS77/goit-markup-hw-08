@@ -9,7 +9,22 @@
     line-height: 1.2;
     text-decoration: none;
 
-    
+    @media screen and (min-width:480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width:768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+    }
+
+   @media screen and (min-width:1200px) {
+    padding-top: 24px;
+
+   }
+
+
     &__text--accent {
     color: var(--acctent-color);
 

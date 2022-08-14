@@ -335,15 +335,15 @@ img {
   align-items: center;
   background: var(--primary-br-color);
   /*@media screen and (min-width:480px) {
-          width: 450px;
+          padding: 16px 15px;
 
       }
-
       @media screen and (min-width:768px) {
-          width: 738px;
+         padding: 26px 15px;
       }
       @media screen and (min-width:1200px) {
-          width: 1600px;
+          padding-top: 24px;
+              padding-bottom: 24px;
       }*/
 }
 
@@ -357,6 +357,23 @@ img {
   line-height: 1.2;
   text-decoration: none;
 }
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+  }
+}
 .logo__text--accent {
   color: var(--acctent-color);
   font-family: "Raleway";
@@ -368,7 +385,6 @@ img {
 }
 
 .nav {
-  display: none;
   display: flex;
 }
 
@@ -431,6 +447,8 @@ img {
 @media screen and (win-width: 768px) {
   .auth__list {
     display: inline-block;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 .auth__list .item + .item {
@@ -438,7 +456,7 @@ img {
 }
 @media screen and (win-width: 768px) {
   .auth__list .item + .item {
-    margin-bottom: 10px;
+    margin: 0;
   }
 }
 
@@ -454,6 +472,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   transition: color 250ms var(--cubic);
+}
+@media screen and (win-width: 768px) {
+  .auth__link {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 .auth__link:hover, .auth__link:focus {
   text-decoration: none;

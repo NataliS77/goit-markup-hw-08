@@ -1,5 +1,4 @@
 .nav {
-    display: none;
     display: flex;
 }
 
@@ -20,7 +19,7 @@
 .nav__link {
     display: block;
     padding-top: 32px;
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 
     color: var(--primary-text-color);
     font-weight: 500;
