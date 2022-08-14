@@ -1,24 +1,57 @@
 .main {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
-    max-width: 1600px;
+    //padding-top: 200px;
+    //padding-bottom: 200px;
+    //height: 600px;
+    //max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--main-bg-color);
     background-repeat: no-repeat;
     background-position: center 0;
-
-    text-align: center;
+      
     
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
 
-   @media screen and (min-width: 768px){
-background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@1x.jpg);
+  
+   @media screen and(min-width:480px) {
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
+    width: 480px;
+    height: 400px;
+   } 
+    
+
+   @media screen and (min-width:768px){
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@1x.jpg);
+width: 768px;
+height: 400px;
 }
- @media screen and (min-width: 1200px) {
-     background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head3_lg@1x.jpg);
- }
+@media screen and (min-width: 1600px) {
+    background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img-head3_lg@1x.jpg);
+    width: 1600px;
+    height: 600px;
+
+}
+ 
+    
+  @media screen and (min-width:480px) {
+    width: 480px;
+        padding: 118px 60px;
+        text-align: center;
+    }
+  @media screen and (min-width:768px) {
+    width: 768px;
+      padding: 118px 204px;
+    text-align: center;
+  }
+
+@media screen and (min-width:1600px) {
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
 }
 
 .main__title {
@@ -34,6 +67,17 @@ background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width:1199px) {
+        width: 360px;
+        
+        font-weight: 900;
+            font-size: 26px;
+            line-height: calc(42/26);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        
+    }
 }
 
 .main-btn {
@@ -58,5 +102,10 @@ background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
 &:hover,
 &:focus {
     background-color: var(--acctent-bg-color);
+
+    @media screen and (max-width:1199px){
+width: 200px;
+padding: 10px 24px;
+    }
 }
 }

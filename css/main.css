@@ -88,7 +88,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -220,14 +220,15 @@ img {
 @media screen and (min-width: 768px) {
   .menu-overlay {
     display: none;
-    opacity: 0;
+    /*opacity: 0;
     pointer-events: none;
     visibility: hidden;
-  }
-  .menu-overlay.is-open {
-    opacity: 0;
-    pointer-events: initial;
-    visibility: visible;
+
+    &.is-open {
+        opacity: 0;
+        pointer-events: initial;
+        visibility: visible;
+    }*/
   }
 }
 
@@ -334,6 +335,17 @@ img {
   display: flex;
   align-items: center;
   background: var(--primary-br-color);
+  /*@media screen and (min-width:480px) {
+          width: 450px;
+
+      }
+
+      @media screen and (min-width:768px) {
+          width: 738px;
+      }
+      @media screen and (min-width:1600px) {
+          width: 1600px;
+      }*/
 }
 
 .logo {
@@ -437,26 +449,52 @@ img {
 }
 
 .main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-bg-color);
   background-repeat: no-repeat;
   background-position: center 0;
-  text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
+}
+@media screen and (min-width: 480px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
+    width: 480px;
+    height: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   .main {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/hero/img-head2_md@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@1x.jpg);
+    width: 768px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .main {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/hero/img-head3_lg@1x.jpg);
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../../images/hero/img-head3_lg@1x.jpg);
+    width: 1600px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .main {
+    width: 480px;
+    padding: 118px 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    width: 768px;
+    padding: 118px 204px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main {
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -471,6 +509,16 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .main__title {
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153846154;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .main-btn {
@@ -491,6 +539,12 @@ img {
 }
 .main-btn:hover, .main-btn:focus {
   background-color: var(--acctent-bg-color);
+}
+@media screen and (max-width: 1199px) {
+  .main-btn:hover, .main-btn:focus {
+    width: 200px;
+    padding: 10px 24px;
+  }
 }
 
 .about {
