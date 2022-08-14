@@ -48,8 +48,8 @@ visibility: hidden;
 
 &.is-open {
     opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+    pointer-events: initial;
+    visibility: visible;
 }
 }
 }
