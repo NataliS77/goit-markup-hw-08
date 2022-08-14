@@ -21,18 +21,18 @@
 <body>
   <!--header section-->
   <header class="section header-section">
-    <div class="container header">
+    <div class="container header"> 
+       <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-close>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       <nav class="nav">
         <div class="nav-logo nav__nav-logo">
           <a class="logo" href="">
             <span lang="" class="logo__text logo__text--accent">Web</span>Studio</a>
         </div>
-        <button data-menu-open class="menu-btn" type="button" >
-          <svg class="menu-btn__icon" width="40" height="40">
-            <use href="./images/icons.svg#menu"></use>
-          </svg>
-        
-        </button>
+      
        <ul class="list nav__list">
           <li class="nav__item item">
             <a class="nav__link link" href="./index.html">Студія</a>
@@ -309,12 +309,12 @@
 </body>
 <!--modal menu-->
 <div class="menu-overlay is-open" data-menu>
-    <div class="menu-container">
-    <button class="close-btn" data-menu-close>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button type="button" class="close-btn js-close-menu " data-menu-open>
       <svg class="close-btn__icon" width="40" height="40">
         <use class="" href="./images/icons.svg#close"></use>
       </svg>
-    </button>-->
+    </button>
     <ul class="menu-overlay__list list">
       <li class="menu-overlay__item item">
         <a class="menu-overlay__link  link" href="./index.html">Студія</a>

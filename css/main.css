@@ -83,7 +83,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -228,7 +228,7 @@ img {
     visibility: hidden;
   }
   .menu-overlay.is-open {
-    opacity: 0;
+    opacity: 1;
     pointer-events: initial;
     visibility: visible;
   }
@@ -256,9 +256,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vw;
-  z-index: 999;
+  width: 480px;
+  height: 796px;
   padding: 48px 40px;
   background: var(--title-text-color);
   transform: translateX(100%);
@@ -361,6 +360,15 @@ img {
   line-height: 1.2;
   text-decoration: none;
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.375;
+    text-decoration: none;
+  }
+}
 @media screen and (min-width: 480px) {
   .logo {
     padding-top: 16px;
@@ -386,6 +394,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo__text--accent {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.375;
+    text-decoration: none;
+  }
 }
 
 .nav {
@@ -460,10 +477,15 @@ img {
 }
 @media screen and (win-width: 768px) {
   .auth__list .item + .item {
-    margin: 0;
+    margin-left: 0;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .auth__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .auth__link {
   display: flex;
   justify-content: center;
@@ -483,6 +505,7 @@ img {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
+    padding: 0;
   }
 }
 .auth__link:hover, .auth__link:focus {
@@ -492,16 +515,17 @@ img {
 .auth__link--actual {
   color: var(--acctent-color);
 }
+@media screen and (win-width: 768px) {
+  .auth__link--actual {
+    display: none;
+  }
+}
 
 .auth__icon {
   fill: currentColor;
 }
 
 .main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-bg-color);
@@ -524,7 +548,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .main {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/hero/img-head3_lg@1x.jpg);
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/hero/Img-3_lg@1x.jpg);
     width: 1200px;
     height: 600px;
   }
@@ -603,6 +627,11 @@ img {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about__title {
@@ -729,6 +758,12 @@ img {
   padding-bottom: 94px;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .companys {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .companys__container {
   display: inline-block;
@@ -742,12 +777,32 @@ img {
   line-height: 1.16;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .companys__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
 
 .companys__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .companys__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .companys__list {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .companys__link {
@@ -761,6 +816,23 @@ img {
   border-radius: 4px;
   color: var(--acctent);
   transition: color 250ms var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .companys__link {
+    width: 210px;
+    border: 1px solid var(--acctent);
+  }
+}
+@media screen and (min-width: 768px) {
+  .companys__link {
+    width: 226px;
+    border: 1px solid var(--acctent);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companys__link {
+    width: 170px;
+  }
 }
 
 .companys__link:hover,
