@@ -23,16 +23,16 @@
   <header class="section header">
     <div class="container header">
       <nav class="nav">
+        <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-close>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        
+        </button>
         <div class="nav-logo nav__nav-logo">
           <a class="logo" href="">
             <span class="logo__text logo__text--accent">Web</span>Studio</a>
        </div>
-        <button class="menu-btn" type="button" data-menu-open>
-            <svg class="menu-btn__icon" width="40" height="40">
-              <use href="./images/icons.svg#menu"></use>
-            </svg>
-
-        </button>
        
       <ul class="nav__list list">
           <li class="nav__item item">
@@ -544,8 +544,8 @@
 </div>
 <!--modal menu-->
 <div class="menu-overlay is-open" data-menu>
-  <div class="menu-container">
-    <button class="close-btn" data-menu-close>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button type="button" class="close-btn js-close-menu " data-menu-open>
       <svg class="close-btn__icon" width="40" height="40">
         <use class="" href="./images/icons.svg#close"></use>
       </svg>
@@ -580,6 +580,7 @@
     </ul>
   </div>
 </div>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
 </body>
