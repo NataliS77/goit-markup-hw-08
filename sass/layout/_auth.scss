@@ -3,8 +3,20 @@
     display: flex;
     margin-left: auto;
 
+    @media screen and(max-width:767px) {
+            display: none;
+        }
+    @media screen and(win-width:768px) {
+        display: inline-block;
+    }    
+
 & .item+.item {
     margin-left: 50px;
+
+    @media screen and (win-width:768px) {
+
+       margin-bottom: 10px; 
+    }
 }
 }
 
