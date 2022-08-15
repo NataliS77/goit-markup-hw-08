@@ -1113,6 +1113,12 @@ img {
   border-radius: 4px;
   transition: translate 250ms var(--cubic), scale 250ms var(--cubic);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .modal-btn {
   position: absolute;
@@ -1217,6 +1223,14 @@ img {
   line-height: 1.15;
   color: #212121;
 }
+@media screen and (max-width: 1199px) {
+  .form__title {
+    width: 370px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
 .form__group {
   position: relative;
   top: 0;
@@ -1317,6 +1331,14 @@ textarea::placeholder {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 1199px) {
+  .form__spich {
+    width: 346px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 
 .form__link {
   color: var(--acctent-color);
@@ -1334,6 +1356,12 @@ textarea::placeholder {
   position: absolute;
   bottom: 5px;
   left: 7px;
+}
+@media screen and (max-width: 1199px) {
+  .check__icon {
+    bottom: 31%;
+    left: 25%;
+  }
 }
 
 .check__icon--uncheck {

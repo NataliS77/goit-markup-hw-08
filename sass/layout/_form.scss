@@ -14,6 +14,13 @@
     line-height: 1.15;
     color: #212121;
 
+    @media screen and (max-width:1199px){
+        width: 370px;
+        font-weight: 700;
+            font-size: 20px;
+            line-height: calc(30/20);
+    }
+
 }
 
 &__group {
