@@ -10,9 +10,9 @@
     justify-content: center;
     gap: 10px;
 
-   // @media screen and(min-width:480px) {
-       //  margin-bottom: 60px;
-   // }
+    @media screen and(min-width:480px) {
+        margin-bottom: 60px;
+    }
 }
 
 
@@ -27,9 +27,9 @@
     text-transform: uppercase;
 
     color: var(--primary-br-color);
-@media screen and (max-width:1199px) {
+/*@media screen and (max-width:1199px) {
     text-align: center;
-}
+}*/
   
     
 }
