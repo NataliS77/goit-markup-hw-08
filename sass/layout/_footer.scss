@@ -4,6 +4,10 @@
     padding-bottom: 60px;
 
     background: var(--main-bg-color);
+    @media screen and (min-width:480px) {
+       text-align: center;  
+    }
+   
 }
 
 .footer-logo__link {
@@ -15,6 +19,12 @@
 
     color: var(--title-text-color);
     text-decoration: none;
+    @media screen and (max-width:1199px) {
+    font-weight: 700;
+        font-size: 24px;
+        line-height: calc(28/24);
+        
+    }
 }
 
 .footer-logo__accent {
@@ -40,6 +50,14 @@
     line-height: 1.7;
 }
 
+.footer__list{
+    @media screen and(min-width:480px) {
+       margin-bottom: 60px;
+} 
+    }
+
+    
+
 .footer__link {
 
     color: var(--title-text-color);
@@ -50,11 +68,12 @@
 }
 
 .footer__item {
-    margin-bottom: 9PX;
+    margin-bottom: 9px;
 }
 
 .footer__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    
 }

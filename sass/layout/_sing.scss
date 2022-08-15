@@ -3,7 +3,7 @@
 }
 
 .sing-footer__title {
-    width: 219px;
+    //width:219px
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -13,6 +13,8 @@
     text-transform: uppercase;
 
     color: var(--primary-br-color);
+
+     text-align: center;
 }
 
 .sing-footer__label {
@@ -37,6 +39,11 @@
 
     outline: transparent;
 
+    @media screen and(min-width:480px) {
+       width: 450px;     
+       margin-bottom: 20px;
+            }
+
 }
 
 .sing-btn {
@@ -56,6 +63,9 @@
     border: none;
     transition: box-shadow 250ms var(--cubic);
 
+    @media screen and(min-width:480px) {
+            padding: 10px 31px;
+        }
 
 &:hover,
 &:focus {

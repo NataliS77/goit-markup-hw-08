@@ -1,12 +1,19 @@
+
 .socials-footer__list {
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+    @media screen and(min-width:480px) {
+         margin-bottom: 60px;
+    }
 }
 
+
 .socials-footer__title {
-    width: 145px;
+    //width: 145px;
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -16,6 +23,7 @@
     text-transform: uppercase;
 
     color: var(--primary-br-color);
+    text-align: center;
 }
 
 .socials-footer__link {
