@@ -45,17 +45,17 @@
     cursor: pointer;
     transition: fill 250ms var(--cubic);
 
-    &__icon:hover,
-    &__icon:focus {
+    .mobile-btn-icon:hover,
+    .mobile-btn-icon:focus {
         fill: var(--acctent-color);
 
     }
-@media screen and (max-width:767px) {
+@media screen and (min-width:768px){
     display: none;
-
-
 }
+    
 }
+
 
 .mobile-about__list {
     margin-bottom: auto;

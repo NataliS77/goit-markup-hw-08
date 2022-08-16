@@ -1007,6 +1007,10 @@ img {
   min-width: 130px;
 }
 
+.portfolio-main__item {
+  display: flex;
+}
+
 .product__list {
   display: flex;
   flex-wrap: wrap;
@@ -1438,8 +1442,14 @@ textarea::placeholder {
   cursor: pointer;
   transition: fill 250ms var(--cubic);
 }
-.mobile-btn__icon:hover, .mobile-btn__icon:focus {
+.mobile-btn .mobile-btn-icon:hover,
+.mobile-btn .mobile-btn-icon:focus {
   fill: var(--acctent-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
 }
 
 .mobile-about__list {
