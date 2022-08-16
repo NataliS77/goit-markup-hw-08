@@ -381,6 +381,7 @@ img {
 @media screen and (min-width: 768px) {
   .auth__link {
     display: inline-flex;
+    gap: 8px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
@@ -390,6 +391,18 @@ img {
 .auth__link:hover, .auth__link:focus {
   text-decoration: none;
   color: var(--acctent-color);
+}
+.auth__link--actual {
+  color: var(--acctent-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth__link {
+    color: var(--main-text-color);
+  }
+}
+
+.auth__icon {
+  fill: currentColor;
 }
 
 .main {

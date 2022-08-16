@@ -56,6 +56,7 @@
 
     @media screen and (min-width:768px) {
         display: inline-flex;
+        gap: 8px;
         font-weight: 500;
         font-size: 12px;
         line-height: calc(14/12);
@@ -63,9 +64,21 @@
 
     }
 
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: var(--acctent-color);
-    }
+   &:hover,
+   &:focus {
+       text-decoration: none;
+       color: var(--acctent-color);
+   }
+
+   &--actual {
+       color: var(--acctent-color);
+   }
+   
+
+   @media screen and(min-width:768px) and(max-width:1199px){
+    color:var(--main-text-color)
+   }
+}
+.auth__icon {
+    fill: currentColor;
 }
