@@ -378,7 +378,7 @@ img {
     line-height: 1.14;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth__link {
     display: inline-flex;
     gap: 8px;
@@ -558,12 +558,6 @@ img {
   background-color: var(--back-color);
   text-align: center;
 }
-@media screen and (max-width: 1199px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 .team__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -571,6 +565,14 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1428571429;
+  }
 }
 .team__list {
   display: flex;
@@ -781,18 +783,22 @@ img {
 }
 @media screen and (min-width: 480px) {
   .footer__container {
+    text-align: center;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__container {
+    align-items: baseline;
+    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
-    text-align: center;
+    align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -936,6 +942,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.06em;
   color: var(--primary-br-color);
   background: var(--acctent-color);
   border-radius: 4px;
@@ -955,6 +962,12 @@ img {
 .portfolio-main {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .portfolio-main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio-main__list {
@@ -1262,6 +1275,9 @@ img {
   color: var(--main-text-color);
   text-align: left;
 }
+.form__name:not(:first-child) {
+  margin-top: 10px;
+}
 
 .from__form {
   display: flex;
@@ -1404,6 +1420,7 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.06em;
   color: var(--primary-br-color);
   background: var(--acctent-color);
   border-radius: 4px;
@@ -1434,7 +1451,7 @@ textarea::placeholder {
   flex-direction: column;
   position: absolute;
   padding: 40px;
-  width: 480px;
+  width: 100px;
   height: 796px;
   background-color: #fff;
 }

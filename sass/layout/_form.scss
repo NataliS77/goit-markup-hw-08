@@ -40,6 +40,9 @@
     color: var(--main-text-color);
     text-align: left;
 }
+&__name:not(:first-child){
+margin-top: 10px;
+}
 }
 
 .from__form {
