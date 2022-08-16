@@ -1453,6 +1453,10 @@ textarea::placeholder {
   color: #212121;
 }
 
+.mobile-about__link--accent {
+  color: #2196F3;
+}
+
 .mobile-about__item:not(:last-child) {
   margin-bottom: 32px;
 }
