@@ -21,11 +21,15 @@
     <div class="container header">
     
       <nav class="nav">
-        <button type="button" ></button>
-               <div class="nav-logo nav__nav-logo">
+                       <div class="nav-logo nav__nav-logo">
           <a class="logo" href="">
             <span class="logo__text logo__text--accent">Web</span>Studio</a>
        </div>
+      <button class="mobile-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="mobile-icon" width="24" height="16">
+          <use class="mobile__icon" href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
       <ul class="nav__list list">
           <li class="nav__item item">
             <a class="nav__link nav__link--current nav__link--ferst link " href="./index.html">Студія</a>
@@ -533,8 +537,40 @@
   </div>
 </div>
 <!--modal menu-->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile">
+    <button class="mobile-btn js-close-menu">
+      <svg class="mobile-icon" width="40" height="40">
+        <use class="mobile__icon" href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="mobile__list list">
+      <li class="mobile__item item"> <a class="mobile__link link" href="./index.html">Студія</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="./portfolio.html">Портфоліо</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="">Контакти</a></li>
+    </ul>
+    <ul class="mobile__list list">
+      <li class="mobile__item item"> <a class="mobile__link link" href="mailto:info@devstudio.com" target="_blank"
+          rel="noopener noreferrer" aria-label="envelope"><svg class="auth-icon" width="16" height="12">
+            <use class="auth__icon" href="./images/icons.svg#envelope"></use>
+          </svg>info@devstudio.com</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="tle:+380961111111" target="_blank"
+          rel="noopener noreferrer" aria-label="tel"><svg class="auth-icon" width="10" height="16">
+            <use class="auth__icon" href="./images/icons.svg#tel"></use>
+          </svg>+38 096 111 11 11</a></li>
+    </ul>
+    <ul class="mobile__list list">
+      <li class="mobile__item item"> <a class="mobile__link link" href="">Instagram</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="">Twitter</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="">Facebook</a></li>
+      <li class="mobile__item item"> <a class="mobile__link link" href="">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
 
- 
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
