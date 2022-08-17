@@ -7,7 +7,9 @@
 
     transform: translateX(100%);
     transition: transform 250ms var(--cubic);
-    
+    @media screen and (max-width:767px) {
+        
+    }
 }
 
 .menu-container.is-open {

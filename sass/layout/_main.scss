@@ -12,7 +12,7 @@
     background-size: cover;
     text-align: center;
   
-   @media screen and (min-width:480px) and (max-width:767px){
+   @media screen and (max-width:767px){
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
 
@@ -67,13 +67,15 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     text-transform: uppercase;
    
 
-    @media screen and(min-width:480px) and (max-width:1199px) {
+    @media screen and (max-width:1199px) {
          width: 360px;
         font-weight: 900;
             font-size: 26px;
             line-height: calc(42/26);
             letter-spacing: 0.06em;
             text-transform: uppercase; 
+            margin-right: 0;
+            margin-left: 0;
     }
         
         

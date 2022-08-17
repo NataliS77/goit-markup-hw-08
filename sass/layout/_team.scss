@@ -3,7 +3,10 @@
     padding-bottom: 94px;
     background-color: var(--back-color);
     text-align: center;
-
+@media screen and (min-width:480px) and (max-width:1199px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 
 &__title {
