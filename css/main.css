@@ -80,7 +80,7 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -468,10 +468,6 @@ img {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6153846154;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 
