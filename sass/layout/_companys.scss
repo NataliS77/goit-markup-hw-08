@@ -40,11 +40,13 @@
             flex-wrap: wrap;
             gap: 30px;
     }
-    @media screen and (min-width:480px) {
-        
-        flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+    
+
+    @media screen and (max-width:767px) {
+         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
     }
-}
+        
+    }
 
 
 .companys__link {

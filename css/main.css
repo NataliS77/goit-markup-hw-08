@@ -82,7 +82,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -683,7 +683,7 @@ img {
     gap: 30px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .companys__list {
     flex-basis: calc((100% - 30px) / 2);
   }
