@@ -21,7 +21,8 @@
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@2x.jpg);
    } 
-   padding: 118px 60px;
+   padding-top: 118px; 
+   padding-bottom: 118px;
 }
     
 
@@ -31,10 +32,9 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@2x.jpg);
-          
         }
-
-         padding: 118px 204px;
+         padding-top: 118px;
+         padding-bottom: 118px ;
 
     }
    @media screen and (min-width:1200px) {
@@ -45,7 +45,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img-hear-3_lg@2x.jpg);
     }
-           padding: 200px 452px;
+           padding-top: 200px ;
+           padding-bottom: 200px;
            width: 1600px;
            height: 600px;
    }
@@ -54,7 +55,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 
 .main__title {
     width: 696px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -68,7 +70,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    
 
     @media screen and (max-width:1199px) {
-         width: 360px;
+         max-width: 360px;
         font-weight: 900;
             font-size: 26px;
             line-height: calc(42/26);

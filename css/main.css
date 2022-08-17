@@ -75,12 +75,10 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -417,7 +415,8 @@ img {
 @media screen and (max-width: 767px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head1_sm@1x.jpg);
-    padding: 118px 60px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -428,7 +427,8 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-head2_md@1x.jpg);
-    padding: 118px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -439,7 +439,8 @@ img {
 @media screen and (min-width: 1200px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img-hear-3_lg@d1x.jpg);
-    padding: 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     width: 1600px;
     height: 600px;
   }
@@ -452,7 +453,8 @@ img {
 
 .main__title {
   width: 696px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--title-text-color);
@@ -464,7 +466,7 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .main__title {
-    width: 360px;
+    max-width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6153846154;
@@ -783,7 +785,6 @@ img {
 .footer__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .footer__container {
@@ -795,7 +796,7 @@ img {
   .footer__container {
     align-items: baseline;
     text-align: center;
-    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -803,6 +804,7 @@ img {
   .footer__container {
     align-items: baseline;
     text-align: left;
+    justify-content: space-between;
   }
 }
 
@@ -887,9 +889,9 @@ img {
 .sing-footer {
   display: block;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .sing-footer {
-    margin: auto;
+    width: 450px;
   }
 }
 
@@ -907,7 +909,7 @@ img {
 }
 
 .sing-footer__label {
-  display: inline-flex;
+  display: inline;
   align-items: center;
   margin-right: 12px;
 }
@@ -919,7 +921,7 @@ img {
 }
 
 .sing-footer__input {
-  display: inline-flex;
+  display: inline;
   padding: 15px 16px;
   width: 358px;
   font-weight: 400;
@@ -932,9 +934,9 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
   outline: transparent;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 440px) and (max-width: 1199px) {
   .sing-footer__input {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -1454,14 +1456,16 @@ textarea::placeholder {
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vw;
   transform: translateX(100%);
   transition: transform 250ms var(--cubic);
+  height: -webkit-fill-available;
 }
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -1470,9 +1474,9 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding: 40px;
+  padding: 48px 40px;
   width: 100%;
-  height: 796px;
+  height: 100%;
   background-color: #fff;
 }
 
@@ -1480,12 +1484,8 @@ textarea::placeholder {
   position: absolute;
   top: 10px;
   right: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
-  padding: 0;
   color: transparent;
   background-color: var(--primary-br-color);
   border: none;
@@ -1546,6 +1546,7 @@ textarea::placeholder {
 .mobile-social__list {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
