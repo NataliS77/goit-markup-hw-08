@@ -1,8 +1,12 @@
-/*.socials-footer{
-    @media screen and(min-width:768px) {
-        width: 206px;
-    }
-}*/
+.socials-footer{
+    margin-bottom: 60px;
+        text-align: center;
+    
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+            text-align: left;
+        }
+}
 .socials-footer__list {
 
     display: flex;
@@ -10,9 +14,7 @@
     justify-content: center;
     gap: 10px;
 
-    @media screen and(min-width:480px) {
-        margin-bottom: 60px;
-    }
+    
 }
 
 
