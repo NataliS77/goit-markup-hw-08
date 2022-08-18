@@ -1,6 +1,9 @@
 .sing-footer {
     display: block;
 text-align: center;
+@media screen and (max-width:767px) {
+   width: 100%; 
+}
 @media screen and(min-width:1200px) {
     text-align: left;
 }
@@ -8,7 +11,7 @@ text-align: center;
 }
 
 .sing-footer__title {
-    //width: 219px;
+    
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -26,9 +29,9 @@ text-align: center;
     align-items: center;
     margin-right: 12px;
 
-    font-weight: inherit;
-    font-size: 100%;
-    line-height: 1,5;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20/16);
 
     @media screen and (max-width:1199px) {
         display: flex;
@@ -39,10 +42,10 @@ text-align: center;
 .sing-footer__input {
     display: inline-block;
     padding: 15px 16px;
-    width: 450px;
-    //font-weight: 400;
-    //font-size: 16px;
-    //line-height: 1.25;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
 
 
     color: #FFFFFF99;
@@ -52,6 +55,9 @@ text-align: center;
     box-shadow: 0px 4px 4px 0px #00000026;
 
     outline: transparent;
+ @media screen and (min-width:768px) {
+            width: 450px;
+        }
 @media screen and (min-width:1200px){
     width: 358px;
 }
