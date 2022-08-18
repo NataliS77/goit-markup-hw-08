@@ -993,7 +993,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-main__list {
-    width: 450px;
     flex-wrap: wrap;
     display: flex;
     justify-content: flex-start;
@@ -1091,21 +1090,6 @@ img {
   width: 370px;
   border: 1px solid var(--br-color);
   transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
-}
-@media screen and (min-width: 480px) {
-  .product__item {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .product__item {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product__item {
-    width: 370px;
-  }
 }
 @media screen and (min-width: 768px) {
   .product__item {
@@ -1448,7 +1432,7 @@ textarea::placeholder {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;

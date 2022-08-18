@@ -46,15 +46,6 @@
     border: 1px solid var(--br-color);
     transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-    @media screen and (min-width:768px) {
-           width: 354px;
-         }
-    @media screen and (min-width:1200px) {
-          width: 370px;
-         }
         @media screen and (min-width:768px) {
             flex-basis: calc((100% - 30px * (2 - 1)) / 2);
             width: 768px;
