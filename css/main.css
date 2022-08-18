@@ -1087,20 +1087,18 @@ img {
 }
 
 .product__item {
-  width: 370px;
   border: 1px solid var(--br-color);
   transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 @media screen and (min-width: 768px) {
   .product__item {
     flex-basis: calc((100% - 30px) / 2);
-    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .product__item {
     flex-basis: calc((100% - 60px) / 3);
-    width: 1200px;
+    width: 370px;
   }
 }
 .product__item:hover {
